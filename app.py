@@ -23,8 +23,8 @@ photos = UploadSet('photos', IMAGES)
 configure_uploads(app, photos)
 patch_request_class(app)  # set maximum file size, default is 16MB
 
-# REMEMBER TO LOAD THE MODEL AND THE SCALER!
-cnn_model = load_model('cats_and_dogs_model6.h5')
+# Load the model:
+cnn_model = load_model('<write-here-the-name-of-the-file>.h5')
 CLASS_INDICES = { 0: 'dog', 1: 'cat' }
 
 
