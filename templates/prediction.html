@@ -12,4 +12,9 @@
         <p> ... {{results[0]}}! </p>
         <p> Obtained score: {{results[1]}} </p>
     </div>
+    <br>
+    <br>
+    <form method=get enctype=multipart/form-data action=" {{ url_for('index') }} ">
+        <input type=submit value="Go Back To Homepage">
+    </form>
 </div>
